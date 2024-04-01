@@ -1,0 +1,131 @@
+.section_shop {
+    margin-top: 2rem;
+}
+
+.section_shop .shop_box {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shop_box .shop_text h4 {
+    font-size: 0.7rem;
+    padding-top: 5px;
+}
+
+.shop_box select {
+    outline: none;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.product_shop {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product_shop .products_box {
+    width: 18rem;
+    height: 20rem;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+.product_shop .products_box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.products_box h4 {
+    padding-top: 1rem;
+}
+
+.products_box .add_pro {
+    padding: 10px 2px 0 0px;
+    justify-content: space-between;
+    transition: all 0.3s;
+    transform: translateX(-14.7rem);
+}
+
+.products_box:hover .add_pro {
+    transform: translateX(0px);
+}
+
+.next_box {
+    margin-top: 2rem;
+    gap: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.next_box .color {
+    width: 3rem;
+    height: 3rem;
+    background-color:  #f42c37;
+    margin-left: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    border-radius: 5px;
+}
+
+.add_card {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.479);
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    justify-content: center;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.add_card img {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    width: 2rem;
+    background-color: rgb(214, 214, 214);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add_card img:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.add_card.box {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.add_card .add_box {
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .product_shop .products_box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .products_box .add_pro {
+        transform: translateX(-90%);
+    }
+    
+}
+
+@media (max-width: 560px) {
+    .products_box .add_pro {
+        transform: translateX(-80%);
+    }
+    
+}
