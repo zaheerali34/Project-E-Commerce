@@ -161,28 +161,13 @@
         bottom: 5rem;
     }
 
-    .section .text_now {
-        text-align: center;
-    }
-
-    .text_shop {
-        text-align: center;
-        align-items: center;
-    }
-
     .shop_bar .image img{
-        position: absolute;
-        bottom: 30rem;
-        left: 0rem;
-        width: 80vw;
+       display: none;
     }
 
-    .shop_bar .text_now {
-        align-items: center ;
-    }
-
-    .shop_bar .text_shop p {
-        width: 200%;
+    .shop_bar .text_shop {
+        align-items: start;
+        width: 160%;
     }
 
     .sec_product {
